@@ -47,7 +47,7 @@
 const AY=['24/25','25/26','26/27'],MONTHS=['Juli','Agustus','September','Oktober','November','Desember','Januari','Februari','Maret','April','Mei','Juni'],COMPARE_MONTHS=['Juli','Agustus','September','Oktober'];
 let D=null,activeScope='region';
 const $=id=>document.getElementById(id),fmt=n=>'Rp '+(n/1e6).toLocaleString('id-ID',{maximumFractionDigits:1})+' jt',full=n=>'Rp '+Math.round(n).toLocaleString('id-ID'),pct=n=>n===null?'—':(n>=0?'+':'')+(n*100).toLocaleString('id-ID',{maximumFractionDigits:1})+'%',growth=(a,b)=>a>0?b/a-1:null;
-function parseCSV(text){const lines=text.replace(/^\\uFEFF/,'').trim().split(/\\r?\\n/);if(lines.length<2)throw Error('CSV kosong.');const headers=lines.shift().split(',').map(x=>x.trim());const req=['academic_year','branch','branch_type','month','revenue','annual_target','status'];if(req.some(k=>!headers.includes(k)))throw Error('Header CSV tidak sesuai template.');return lines.filter(x=>x.trim()).map(line=>{const c=line.split(',');let o={};headers.forEach((h,i)=>o[h]=(c[i]||'').trim());return o;});}
+function parseCSV(text){const lines=text.replace(/^\uFEFF/,'').trim().split(/\r?\n/);if(lines.length<2)throw Error('CSV kosong.');const headers=lines.shift().split(',').map(x=>x.trim());const req=['academic_year','branch','branch_type','month','revenue','annual_target','status'];if(req.some(k=>!headers.includes(k)))throw Error('Header CSV tidak sesuai template.');return lines.filter(x=>x.trim()).map(line=>{const c=line.split(',');let o={};headers.forEach((h,i)=>o[h]=(c[i]||'').trim());return o;});}
 function build(rows){
  const data={},types={},targets={},branches=new Set();
  AY.forEach(a=>data[a]={});
