@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Banten Raya | Historical Milestones</title>
+<style>
+:root{--bg:#f3f6fb;--panel:#fff;--ink:#17243b;--muted:#718096;--line:#e5eaf2;--nav:#101d35;--blue:#3975d7;--blue2:#e9f1ff;--green:#16865b;--red:#c44e56;--shadow:0 8px 28px rgba(20,37,65,.06)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink)}
+.app{min-height:100vh;display:flex}.sidebar{width:258px;background:var(--nav);color:#dbe5f5;position:fixed;inset:0 auto 0 0;padding:24px 15px;overflow:auto;z-index:4}
+.brand{padding:0 12px 22px;border-bottom:1px solid #2a3850}.brand small{color:#91a5c4;letter-spacing:.12em;font-size:10px;font-weight:800}.brand h1{font-size:19px;margin:8px 0 3px;color:#fff}.brand p{font-size:11px;color:#9aabc4;margin:0}
+.navlabel{font-size:10px;letter-spacing:.13em;color:#8496b2;font-weight:800;padding:20px 12px 8px;text-transform:uppercase}
+.navbtn{width:100%;border:0;background:transparent;color:#c4d0e3;text-align:left;padding:10px 12px;border-radius:9px;margin:2px 0;cursor:pointer;font-size:12px;display:flex;align-items:center;gap:10px}
+.navbtn:hover{background:#1b2c49;color:#fff}.navbtn.active{background:#294a78;color:#fff;font-weight:700}.dot{width:7px;height:7px;border-radius:50%;background:#6885ad;flex:none}.navbtn.active .dot{background:#79b1ff}
+.sidefoot{font-size:10px;color:#91a5c4;line-height:1.6;padding:22px 12px}
+.main{margin-left:258px;width:calc(100% - 258px);padding:28px 32px 48px;max-width:1600px}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:24px}.eyebrow{color:var(--blue);font-weight:800;font-size:10px;letter-spacing:.13em;text-transform:uppercase}.topbar h2{font-size:25px;margin:5px 0 0;letter-spacing:-.03em}.updated{font-size:11px;color:var(--muted);background:#fff;border:1px solid var(--line);padding:9px 12px;border-radius:30px}
+.intro{color:var(--muted);font-size:13px;line-height:1.65;margin:-10px 0 22px;max-width:920px}
+.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin-bottom:16px}.card,.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}
+.card{padding:16px 17px}.label{font-size:11px;color:var(--muted);font-weight:700}.value{font-size:23px;font-weight:800;letter-spacing:-.04em;margin:8px 0 4px}.sub{font-size:10px;color:var(--muted)}.positive{color:var(--green)!important}.negative{color:var(--red)!important}
+.grid2{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(270px,.8fr);gap:15px;margin-bottom:15px}.panel{padding:18px 19px;min-width:0}.panelhead{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:14px}.panel h3{font-size:14px;margin:0 0 4px}.desc{font-size:11px;color:var(--muted);margin:0;line-height:1.5}
+.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:10px;color:var(--muted)}.legend span{display:flex;align-items:center;gap:5px}.swatch{width:8px;height:8px;border-radius:2px;display:inline-block}
+.chart{width:100%;overflow:hidden}.chart svg{width:100%;height:auto;display:block}.barlabels{font-size:10px;fill:#75839a}.gridline{stroke:#edf0f5;stroke-width:1}.axis{font-size:10px;fill:#8995a8}
+.tablewrap{overflow:auto}.data{border-collapse:collapse;width:100%;font-size:11px;white-space:nowrap}.data th{text-align:right;color:#78869b;font-size:9px;text-transform:uppercase;letter-spacing:.04em;background:#f8fafd;padding:11px 10px}.data th:first-child,.data td:first-child{text-align:left}.data td{text-align:right;padding:11px 10px;border-bottom:1px solid #edf0f4}.data tr:last-child td{border-bottom:0}.data td:first-child{font-weight:700;color:#263653}.data tr:hover td{background:#fafcff}
+.pill{display:inline-block;border-radius:30px;padding:4px 7px;font-size:10px;font-weight:800;background:#e8f6ef;color:var(--green)}.pill.down{background:#fff0f0;color:var(--red)}.pill.na{background:#f0f2f6;color:#738096}
+.note{font-size:10px;color:var(--muted);line-height:1.6;margin-top:11px}.select{border:1px solid var(--line);background:#fff;border-radius:8px;padding:8px 10px;color:var(--ink);font-size:10px}
+.monthgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.monthbox{border:1px solid var(--line);border-radius:10px;padding:11px}.monthbox .m{font-size:9px;color:var(--muted);font-weight:800;text-transform:uppercase}.monthbox .v{font-size:15px;font-weight:800;margin:6px 0}.monthbox .g{font-size:10px;font-weight:800}
+.uploadrow{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.uploadbtn{display:inline-flex;align-items:center;gap:7px;border:1px solid #d7e2f3;background:#f8fbff;color:#285a9f;border-radius:9px;padding:9px 12px;font-size:11px;font-weight:700;cursor:pointer}.uploadbtn:hover{background:var(--blue2)}input[type=file]{display:none}.footer{color:#9aa5b5;font-size:10px;padding:22px 4px}
+@media(max-width:1000px){.sidebar{width:220px}.main{margin-left:220px;width:calc(100% - 220px);padding:23px}.cards{grid-template-columns:repeat(2,1fr)}.grid2{grid-template-columns:1fr}}
+@media(max-width:680px){.sidebar{width:100%;height:auto;position:relative;padding:13px}.app{display:block}.brand{padding:0 8px 12px}.brand h1{font-size:16px}.navlabel{padding:12px 8px 5px}.navlist{display:flex;overflow:auto;gap:5px}.navbtn{white-space:nowrap;width:auto;padding:8px 10px;font-size:11px}.navbtn .dot{display:none}.sidefoot{display:none}.main{margin:0;width:100%;padding:18px 13px}.topbar{align-items:flex-start;flex-direction:column}.topbar h2{font-size:21px}.cards{gap:8px}.card{padding:12px}.value{font-size:19px}.grid2{gap:10px}}
+</style></head>
+<body><div class="app">
+<aside class="sidebar"><div class="brand"><small>ENGLISH ACADEMY · BANTEN RAYA</small><h1>Revenue Milestones</h1><p>Historical Performance Report</p></div>
+<div class="navlabel">Overview</div><div class="navlist"><button class="navbtn active" data-page="region"><i class="dot"></i> Rekap Region</button></div>
+<div class="navlabel">Branch Performance</div><div id="branchNav" class="navlist"></div>
+<div class="sidefoot">Academic Year 2024/25 – 2026/27<br>Data dibandingkan pada periode yang setara</div></aside>
+<main class="main">
+<div class="topbar"><div><div class="eyebrow">Banten Raya · Performance Intelligence</div><h2 id="pageTitle">Rekap Region</h2></div><div class="updated" id="dataStatus">Memuat data.csv…</div></div>
+<div id="pageIntro" class="intro">Rekap milestone revenue per cabang dan region untuk tiga Academic Year.</div>
+<section id="kpis" class="cards"></section>
+<section class="grid2"><div class="panel"><div class="panelhead"><div><h3 id="chartTitle">Revenue by Academic Year</h3><p class="desc">Revenue bulanan berdasarkan bulan kalender yang sama</p></div><div class="legend"><span><i class="swatch" style="background:#9eb6d9"></i>24/25</span><span><i class="swatch" style="background:#4d83d1"></i>25/26</span><span><i class="swatch" style="background:#172f54"></i>26/27*</span></div></div><div class="chart" id="chart"></div></div>
+<div class="panel"><div class="panelhead"><div><h3>Monthly Improvement</h3><p class="desc">AY 26/27 vs AY 25/26 · bulan yang sudah selesai</p></div></div><div id="monthGrowth" class="monthgrid"></div><p class="note">*AY 26/27 hanya menghitung bulan yang sudah selesai agar perbandingannya setara.</p></div></section>
+<section class="panel"><div class="panelhead"><div><h3 id="tableTitle">Monthly Revenue Breakdown</h3><p class="desc">Revenue dan improvement pada bulan yang sama</p></div><select id="growthSelect" class="select"><option value="25/26">Growth 25/26 vs 24/25</option><option value="26/27" selected>Growth 26/27 vs 25/26</option></select></div><div class="tablewrap"><table class="data" id="dataTable"></table></div><p class="note">Untuk AY 26/27, bulan berjalan dan bulan yang belum dimulai ditampilkan sebagai “—”, bukan Rp 0. AY 24/25 dan AY 25/26 tetap menampilkan seluruh bulan karena periodenya sudah selesai. Improvement dihitung dari (periode terbaru − periode pembanding) ÷ periode pembanding × 100%. Jika nilai pembanding 0, hasil ditandai “New milestone” atau “—”.</p></section>
+<section class="panel" style="margin-top:15px"><div class="panelhead"><div><h3>Update Data</h3><p class="desc">Upload CSV untuk melihat data terbaru pada dashboard ini. Untuk memperbarui website yang sudah live, ganti file data.csv di repository GitHub.</p></div></div><div class="uploadrow"><label class="uploadbtn" for="csvUpload">↑ Upload CSV terbaru</label><input id="csvUpload" type="file" accept=".csv,text/csv"><span class="note" id="uploadNote">Format: academic_year, branch, branch_type, month, revenue, annual_target, status</span></div></section>
+<div class="footer">Internal management report · Source: Revenue Recap AY 24/25, 25/26, 26/27.</div>
+</main></div>
+<script>
+const AY=['24/25','25/26','26/27'],MONTHS=['Juli','Agustus','September','Oktober','November','Desember','Januari','Februari','Maret','April','Mei','Juni'];
+// AY 26/27 hanya menampilkan bulan yang sudah selesai. Bulan berjalan dan bulan mendatang ditandai "—".
+function completedMonths26(){
+ const now=new Date(), currentMonthStart=new Date(now.getFullYear(),now.getMonth(),1);
+ return MONTHS.filter((m,i)=>{
+   const year=i<6?2026:2027, calendarMonth=i<6?i+6:i-6;
+   return new Date(year,calendarMonth,1)<currentMonthStart;
+ });
+}
+let D=null,activeScope='region';
+const $=id=>document.getElementById(id),fmt=n=>'Rp '+(n/1e6).toLocaleString('id-ID',{maximumFractionDigits:1})+' jt',full=n=>'Rp '+Math.round(n).toLocaleString('id-ID'),pct=n=>n===null?'—':(n>=0?'+':'')+(n*100).toLocaleString('id-ID',{maximumFractionDigits:1})+'%',growth=(a,b)=>a>0?b/a-1:null;
+function parseCSV(text){const lines=text.replace(/^\uFEFF/,'').trim().split(/\r?\n/);if(lines.length<2)throw Error('CSV kosong.');const headers=lines.shift().split(',').map(x=>x.trim());const req=['academic_year','branch','branch_type','month','revenue','annual_target','status'];if(req.some(k=>!headers.includes(k)))throw Error('Header CSV tidak sesuai template.');return lines.filter(x=>x.trim()).map(line=>{const c=line.split(',');let o={};headers.forEach((h,i)=>o[h]=(c[i]||'').trim());return o;});}
+function build(rows){
+ const data={},types={},targets={},branches=new Set();
+ AY.forEach(a=>data[a]={});
+ rows.forEach(r=>{if(!AY.includes(r.academic_year)||!r.branch||!MONTHS.includes(r.month))return;
+const b=r.branch,a=r.academic_year;branches.add(b);types[b]=r.branch_type;targets[b]=Number(r.annual_target)||0;
+ if(!data[a][b])data[a][b]={};data[a][b][r.month]=Number(r.revenue)||0;
+ });
+ const branchOrder=[...branches].sort((a,b)=>a.localeCompare(b,'id'));
+ AY.forEach(a=>branchOrder.forEach(b=>{if(!data[a][b])data[a][b]={};MONTHS.forEach(m=>{if(data[a][b][m]===undefined)data[a][b][m]=0;});}));
+ const region={};AY.forEach(a=>{region[a]={};MONTHS.forEach(m=>region[a][m]=branchOrder.reduce((s,b)=>s+(data[a][b][m]||0),0));});
+ return {months:MONTHS,branchOrder,types,targets,data,region};
+}
+function get(scope,ay,m){return scope==='region'?D.region[ay][m]:(D.data[ay][scope]||{})[m]||0;}
+function series(scope,ay){return MONTHS.map(m=>get(scope,ay,m));}
+function sum(arr){return arr.reduce((a,b)=>a+b,0);}
+function period(scope,ay,months){return sum(months.map(m=>get(scope,ay,m)));}
+function nav(){const el=$('branchNav');el.innerHTML='';D.branchOrder.forEach(b=>{const btn=document.createElement('button');btn.className='navbtn';btn.dataset.page='branch:'+b;btn.innerHTML='<i class="dot"></i>'+b;btn.addEventListener('click',()=>render(b));el.appendChild(btn);});}
+function kpis(scope){
+ const months26=completedMonths26(),full24=period(scope,'24/25',MONTHS),full25=period(scope,'25/26',MONTHS),ytd25=period(scope,'25/26',months26),ytd26=period(scope,'26/27',months26),gFull=growth(full24,full25),gYtd=growth(ytd25,ytd26);
+ const cards=[['Revenue AY 24/25',fmt(full24),'Full Academic Year'],['Revenue AY 25/26',fmt(full25),'Full Academic Year · '+pct(gFull)+' vs 24/25'],['Revenue AY 26/27*',fmt(ytd26),'YTD '+(months26.length?months26[0]+'–'+months26[months26.length-1]:'belum ada bulan selesai')],['Improvement YTD',pct(gYtd),'AY 26/27 vs periode sama AY 25/26']];
+ $('kpis').innerHTML=cards.map((c,i)=>`<div class="card"><div class="label">${c[0]}</div><div class="value ${i===3?(gYtd!==null&&gYtd<0?'negative':'positive'):''}">${c[1]}</div><div class="sub">${c[2]}</div></div>`).join('');
+}
+function chart(scope){
+ const s=AY.map(a=>series(scope,a)),max=Math.max(...s.flat(),1)*1.12,W=760,H=280,L=58,R=12,T=14,B=40,ph=H-T-B,pw=W-L-R,gw=pw/12,bw=Math.min(17,gw*.22),colors=['#9eb6d9','#4d83d1','#172f54'];let svg=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Revenue per bulan">`;
+ for(let i=0;i<=4;i++){let y=T+ph*i/4,v=max*(1-i/4);svg+=`<line class="gridline" x1="${L}" y1="${y}" x2="${W-R}" y2="${y}"/><text class="axis" x="${L-8}" y="${y+4}" text-anchor="end">${(v/1e6).toFixed(0)} jt</text>`;}
+ MONTHS.forEach((m,i)=>{let cx=L+gw*(i+.5);s.forEach((arr,j)=>{if(j===2&&!completedMonths26().includes(m))return;let v=arr[i],h=v/max*ph,x=cx+(j-1)*(bw+3)-bw/2,y=T+ph-h;svg+=`<rect x="${x}" y="${y}" width="${bw}" height="${Math.max(0,h)}" rx="3" fill="${colors[j]}"><title>${m} AY ${AY[j]}: ${full(v)}</title></rect>`;});svg+=`<text class="barlabels" x="${cx}" y="${H-14}" text-anchor="middle">${m.slice(0,3)}</text>`;});
+ $('chart').innerHTML=svg+'</svg>';
+}
+function growthCards(scope){const months26=completedMonths26();$('monthGrowth').innerHTML=months26.map(m=>{let a=get(scope,'25/26',m),b=get(scope,'26/27',m),g=growth(a,b);return `<div class="monthbox"><div class="m">${m}</div><div class="v">${fmt(b)}</div><div class="g ${g!==null&&g<0?'negative':'positive'}">${pct(g)} vs AY 25/26</div></div>`;}).join('');}
+function table(scope){let rows='';const available26=completedMonths26();MONTHS.forEach(m=>{let a=get(scope,'24/25',m),b=get(scope,'25/26',m),c=get(scope,'26/27',m),g1=growth(a,b),g2=growth(b,c),new1=a===0&&b>0,new2=b===0&&c>0,month26Available=available26.includes(m);
+ rows+=`<tr><td>${m}</td><td>${full(a)}</td><td>${full(b)}</td><td>${month26Available?full(c):'—'}</td><td><span class="pill ${g1!==null&&g1<0?'down':g1===null?'na':''}">${new1?'New milestone':pct(g1)}</span></td><td><span class="pill ${!month26Available||g2===null?'na':g2<0?'down':''}">${!month26Available?'—':new2?'New milestone':pct(g2)}</span></td></tr>`;});
+ $('dataTable').innerHTML=`<thead><tr><th>Bulan</th><th>AY 24/25</th><th>AY 25/26</th><th>AY 26/27*</th><th>Growth 25/26</th><th>Growth 26/27</th></tr></thead><tbody>${rows}</tbody>`;
+}
+function render(scope){activeScope=scope;const region=scope==='region';$('pageTitle').textContent=region?'Rekap Region':scope;$('pageIntro').textContent=region?'Ringkasan pencapaian revenue seluruh cabang Banten Raya. Perbandingan improvement menggunakan periode yang setara agar pembacaan kinerja lebih fair.':'Historical revenue '+scope+'. Lihat perkembangan per bulan, pencapaian tiap Academic Year, dan improvement dibandingkan periode yang sama.';
+ $('chartTitle').textContent=(region?'Regional':'Branch')+' Revenue by Month';$('tableTitle').textContent=(region?'Regional':'Branch')+' Monthly Revenue Breakdown';kpis(scope);chart(scope);growthCards(scope);table(scope);
+ document.querySelectorAll('.navbtn').forEach(b=>b.classList.toggle('active',b.dataset.page===(region?'region':'branch:'+scope)));
+}
+function activate(rows,label){D=build(rows);if(!D.branchOrder.length)throw Error('Tidak ada data cabang yang valid.');nav();render('region');$('dataStatus').textContent=label;$('uploadNote').textContent='Data berhasil dimuat. Untuk update permanen di GitHub, replace data.csv di repository.';}
+async function loadDefault(){try{const r=await fetch('./data.csv',{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);activate(parseCSV(await r.text()),'Data dimuat dari data.csv');}catch(e){$('dataStatus').textContent='Gagal memuat data.csv';$('pageIntro').textContent='Pastikan file data.csv berada satu folder dengan index.html. Detail: '+e.message;}}
+$('csvUpload').addEventListener('change',async e=>{const f=e.target.files[0];if(!f)return;try{activate(parseCSV(await f.text()),'Preview: '+f.name);$('uploadNote').textContent='CSV lokal aktif untuk preview. Commit file data.csv terbaru ke GitHub agar perubahan tampil untuk semua pengunjung.';}catch(err){alert('CSV tidak dapat dibaca: '+err.message);}e.target.value='';});
+$('growthSelect').addEventListener('change',()=>table(activeScope));
+document.querySelector('[data-page="region"]').addEventListener('click',()=>render('region'));
+loadDefault();
+</script></body></html>
